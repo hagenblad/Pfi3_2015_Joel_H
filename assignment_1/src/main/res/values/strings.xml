@@ -1,6 +1,29 @@
 <resources>
     <string name="app_name">Assignment_1</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="title">Movie quotes</string>
     <string name="action_settings">Settings</string>
+    <string name="next_button">Next quote</string>
+
+    <string-array name="quotes">
+        <item>Frankly, my dear, I dont give a damn.</item>
+        <item>Keep your friends close, and your enemies closer.</item>
+        <item>Well, nobodys perfect.</item>
+        <item>You talkin to me?</item>
+        <item>Rosebud.</item>
+        <item>Louis, I think this is the beginning of a beautiful friendship.</item>
+        <item>We rob banks.</item>
+        <item>I love the smell of napalm in the morning.</item>
+    </string-array>
+
+    <string-array name="movies">
+        <item>Gone With the Wind (1939)</item>
+        <item>The Godfather, part II (1974)</item>
+        <item>Some Like it Hot (1959)</item>
+        <item>Taxi Driver (1976)</item>
+        <item>Citizen Kane (1941)</item>
+        <item>Casablanca (1942)</item>
+        <item>Bonnie and Clyde (1967)</item>
+        <item>Apocalypse Now (1979)</item>
+    </string-array>
 </resources>

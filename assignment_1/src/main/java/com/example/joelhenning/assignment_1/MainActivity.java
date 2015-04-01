@@ -1,25 +1,75 @@
 package com.example.joelhenning.assignment_1;
 
+import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import java.util.Random;
 
 
 public class MainActivity extends ActionBarActivity {
+
+
+    Random random = new Random();
+    int quoteNumber = 0;
+
+    public void getQuote (View v) {
+        // Send to logcat
+        Log.i("MyApp", "Button pressed");
+
+        TextView movieQuote = (TextView) findViewById(R.id.moviequote);
+        TextView movieTitle = (TextView) findViewById(R.id.movietitle);
+
+        movieQuote.setText(null);
+        movieTitle.setText(null);
+
+        String [] movies = getResources().getStringArray(R.array.movies);
+        String [] quotes = getResources().getStringArray(R.array.quotes);
+
+        quoteNumber = random.nextInt(quotes.length);
+
+        movieQuote.setText(quotes[quoteNumber]);
+        movieTitle.setText(movies[quoteNumber]);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i("onCreate", "launched");
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("onStart", "launched");
+    }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    protected void onResume() {
+        super.onResume();
+        Log.i("onResume", "launched");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("onPause", "launched");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("onDestroy", "launched");
     }
 
     @Override
@@ -36,4 +86,5 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
