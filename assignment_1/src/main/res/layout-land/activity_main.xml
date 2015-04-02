@@ -31,7 +31,7 @@
         android:layout_centerHorizontal="false"
         android:layout_toRightOf="@id/headline"
         android:layout_marginLeft="32dp"
-        android:background="#ffd40d06"
+        android:background="#ffdc4566"
         style="?android:attr/borderlessButtonStyle"
         android:onClick="getQuote"
         android:textColor="#ffff99d3"
