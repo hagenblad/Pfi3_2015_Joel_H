@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assignment_1</string>
+    <string name="next_button">Nytt citat</string>
+    <string name="title">Filmcitat</string>
+    <string name="action_settings">Inställningar</string>
+</resources>
