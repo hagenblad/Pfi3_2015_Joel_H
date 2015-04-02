@@ -43,7 +43,6 @@
         android:layout_below="@id/button_nextQuote"
         android:layout_marginTop="16dp"
         android:textColor="#ffffff"
-
         />
 
     <TextView
@@ -54,6 +53,5 @@
         android:layout_below="@id/moviequote"
         android:layout_marginTop="40dp"
         android:textColor="#ffffff"
-
         />
 </RelativeLayout>

@@ -28,14 +28,18 @@ public class MainActivity extends ActionBarActivity {
         TextView movieQuote = (TextView) findViewById(R.id.moviequote);
         TextView movieTitle = (TextView) findViewById(R.id.movietitle);
 
+        //Clear the textViews
         movieQuote.setText(null);
         movieTitle.setText(null);
 
+        // Load the string-arrays
         String [] movies = getResources().getStringArray(R.array.movies);
         String [] quotes = getResources().getStringArray(R.array.quotes);
 
+        // Generate a "random" position in the string-arrays
         quoteNumber = random.nextInt(quotes.length);
 
+        // print out the quote and movie in respective textView
         movieQuote.setText(quotes[quoteNumber]);
         movieTitle.setText(movies[quoteNumber]);
     }
@@ -70,6 +74,13 @@ public class MainActivity extends ActionBarActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("onDestroy", "launched");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
     }
 
     @Override
