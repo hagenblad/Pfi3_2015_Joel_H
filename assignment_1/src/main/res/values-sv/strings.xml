@@ -4,4 +4,26 @@
     <string name="next_button">Nytt citat</string>
     <string name="title">Filmcitat</string>
     <string name="action_settings">Inställningar</string>
+
+    <string-array name="quotes">
+        <item>Uppriktigt, min kära, bryr jag mig inte.</item>
+        <item>Håll dina vänner nära, och dina fiender närmare.</item>
+        <item>Nåväl, ingen är perfekt.</item>
+        <item>Pratar du med mig?</item>
+        <item>Rosebud.</item>
+        <item>Louis, jag tror det här är början på en underbar vänskap.</item>
+        <item>Vi rånar banker.</item>
+        <item>Jag älskar lukten av napalm på morgonen.</item>
+    </string-array>
+
+    <string-array name="movies">
+        <item>Borta med Vinden (1939)</item>
+        <item>Gudfadern, del II (1974)</item>
+        <item>I hetaste laget (1959)</item>
+        <item>Taxi Driver (1976)</item>
+        <item>En sensation (1941)</item>
+        <item>Casablanca (1942)</item>
+        <item>Bonnie och Clyde (1967)</item>
+        <item>Apocalypse Now (1979)</item>
+    </string-array>
 </resources>
