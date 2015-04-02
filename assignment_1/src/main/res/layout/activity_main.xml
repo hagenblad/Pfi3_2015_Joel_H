@@ -33,6 +33,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_below="@id/headline"
         android:onClick="getQuote"
+        android:textColor="#ffff99d3"
         />
 
     <TextView
