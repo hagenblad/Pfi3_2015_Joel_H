@@ -1,0 +1,116 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joelhenning.assignment_2.BlankFragment"
+    android:id="@+id/skanetrafiken_main_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#fff">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:src="@drawable/sok"
+            android:background="#fff"
+            android:onClick="getNewFragment"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageButton"
+            android:layout_marginLeft="88dp"
+            android:src="@drawable/kalender"
+            android:background="#fff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/reseplanerare"
+            android:id="@+id/textView2"
+            android:layout_below="@id/imageButton"
+            android:layout_marginLeft="32dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/tidtabeller"
+            android:id="@+id/textView3"
+            android:layout_below="@id/imageButton2"
+            android:layout_toRightOf="@id/textView2"
+            android:layout_marginLeft="32dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#fff">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:src="@drawable/klocka"
+            android:background="#fff"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageButton3"
+            android:layout_marginLeft="88dp"
+            android:src="@drawable/biljett"
+            android:background="#fff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/hallplats"
+            android:id="@+id/textView4"
+            android:layout_below="@id/imageButton3"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/biljetter"
+            android:id="@+id/textView5"
+            android:layout_below="@id/imageButton4"
+            android:layout_toRightOf="@id/textView4"
+            android:layout_marginLeft="56dp"
+            />
+    </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>
