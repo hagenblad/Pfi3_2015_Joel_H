@@ -16,46 +16,17 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity{
 
-    public TextView planetName = (TextView) findViewById(R.id.textViewPlanetName);
-    public ImageView planetImage = (ImageView) findViewById(R.id.imageViewPlanet);
-    public TextView planetRadius = (TextView) findViewById(R.id.textViewPlanetInfo1);
-    public TextView planetTemp = (TextView) findViewById(R.id.textViewPlanetInfo2);
-    public TextView planetText = (TextView) findViewById(R.id.textViewPlanetText);
-
-    public ImageButton mercuryButton = (ImageButton)
 
     public void getNewFragment (View v){
-        Log.i("Planet Info", "Planet button pressed");
+        Log.i("com.example.joelhenning.assignment_4.Planet Info", "com.example.joelhenning.assignment_4.Planet button pressed");
 
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         PlanetFragment pf = new PlanetFragment();
         ft.replace(R.id.planetGridFragment,pf);
         ft.commit();
+
     }
-
-//    public void showRightPlanet () {
-//
-//
-//    }
-
-//    public void showDialogFragment (View v){
-//        Log.i("Planet Info", "Banana button pressed");
-//
-//        FragmentManager fm = getSupportFragmentManager();
-//        InfoFragment inf = InfoFragment.newInstance
-//
-//    }
-
-//    public void getPreviousFragment (View v){
-//        Log.i("Planet Info", "Back button pressed");
-//
-//        FragmentManager fm = getFragmentManager();
-//        FragmentTransaction ft = fm.beginTransaction();
-//        GridFragment gf = new GridFragment();
-//        ft.replace(R.id.planetInfoFragment, gf);
-//        ft.commit();
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

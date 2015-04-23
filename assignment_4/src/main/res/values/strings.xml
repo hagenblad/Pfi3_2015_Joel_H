@@ -65,4 +65,7 @@
     <string name="uranus_temp">Mean temperature: −197.2 °C</string>
     <string name="neptune_temp">Mean temperature: −201 °C</string>
 
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

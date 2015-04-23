@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Earth"
+            android:text=""
             android:id="@+id/textViewPlanetName"
             android:textSize="28dp"
             android:textColor="#ffffff"
@@ -29,7 +29,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageViewPlanet"
-            android:src="@drawable/earth"
             android:layout_toRightOf="@id/textViewPlanetName"
             android:layout_marginLeft="64dp"
             />
@@ -37,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/earth_radius"
+            android:text=""
             android:id="@+id/textViewPlanetInfo1"
             android:layout_below="@id/imageViewPlanet"
             android:layout_alignStart="@id/textViewPlanetName"
@@ -49,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/earth_temp"
+            android:text=""
             android:id="@+id/textViewPlanetInfo2"
             android:layout_below="@id/textViewPlanetInfo1"
             android:layout_alignStart="@id/textViewPlanetName"
@@ -74,7 +73,7 @@
                 android:layout_marginTop="12dp"
                 android:textSize="18dp"
                 android:textColor="#ffffff"
-                android:text="@string/earth_info"
+                android:text=""
                 />
             </ScrollView>
     </RelativeLayout>
