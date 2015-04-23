@@ -56,6 +56,16 @@ public class MainActivity extends ActionBarActivity{
     }
 
     @Override
+    public void onBackPressed(){
+        if (getFragmentManager().getBackStackEntryCount()> 0){
+            getFragmentManager().popBackStack();
+            Log.i("Activity", "going back");
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -78,7 +88,6 @@ public class MainActivity extends ActionBarActivity{
             FragmentManager fm = getFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             InfoFragment inf = new InfoFragment();
-            ft.addToBackStack(null);
             inf.show(ft, "Dialog");
             return true;
         }

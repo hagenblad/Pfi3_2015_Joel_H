@@ -73,5 +73,4 @@ public class GridFragment extends Fragment {
         return v;
     }
 
-
 }
