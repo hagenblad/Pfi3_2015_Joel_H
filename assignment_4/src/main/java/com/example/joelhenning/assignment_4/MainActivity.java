@@ -16,18 +16,6 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity{
 
-
-    public void getNewFragment (View v){
-        Log.i("com.example.joelhenning.assignment_4.Planet Info", "com.example.joelhenning.assignment_4.Planet button pressed");
-
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        PlanetFragment pf = new PlanetFragment();
-        ft.replace(R.id.planetGridFragment,pf);
-        ft.commit();
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,6 +72,18 @@ public class MainActivity extends ActionBarActivity{
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+
+        if (id == R.id.action_info){
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            InfoFragment inf = new InfoFragment();
+            ft.addToBackStack(null);
+            ft.show(inf);
+
+
+            return false;
+
         }
 
         return super.onOptionsItemSelected(item);

@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class InfoFragment extends DialogFragment implements View.OnClickListener{
+public class InfoFragment extends DialogFragment{
 
 
     public InfoFragment() {
@@ -24,16 +24,9 @@ public class InfoFragment extends DialogFragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.fragment_info, container, false);
-
-        return v;
+        return inflater.inflate(R.layout.fragment_info, container, false);
     }
 
-    @Override
-    public void onClick(View v) {
-
-        InfoFragment.this.dismiss();
-    }
 }
 
 

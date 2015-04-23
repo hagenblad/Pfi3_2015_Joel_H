@@ -60,8 +60,13 @@ public class GridFragment extends Fragment {
                 Log.i("GridFragment", "Clicked on position: " + position);
                 FragmentManager fm = getFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
+                Planet planet = planets.get(position);
                 PlanetFragment pf = new PlanetFragment();
-                ft.replace(R.id.planetGridFragment, pf);
+                Bundle args = new Bundle();
+                args.putSerializable("planet", planet);
+                pf.setArguments(args);
+                ft.replace(R.id.main_activity_layout, pf);
+                ft.addToBackStack(null);
                 ft.commit();
             }
         });
