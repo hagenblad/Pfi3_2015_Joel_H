@@ -79,11 +79,8 @@ public class MainActivity extends ActionBarActivity{
             FragmentTransaction ft = fm.beginTransaction();
             InfoFragment inf = new InfoFragment();
             ft.addToBackStack(null);
-            ft.show(inf);
-
-
-            return false;
-
+            inf.show(ft, "Dialog");
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

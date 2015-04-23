@@ -6,6 +6,7 @@
     tools:context="com.example.joelhenning.assignment_4.InfoFragment"
     android:id="@+id/dialog_info_fragment"
     android:onClick="onClick"
+    android:background="#000000"
     >
     <RelativeLayout
         android:layout_width="260dp"

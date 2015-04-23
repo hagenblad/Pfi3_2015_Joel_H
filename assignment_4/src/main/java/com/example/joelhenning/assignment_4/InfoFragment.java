@@ -14,11 +14,9 @@ import android.view.ViewGroup;
  */
 public class InfoFragment extends DialogFragment{
 
-
     public InfoFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
