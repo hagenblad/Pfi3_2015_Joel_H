@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Planet-info</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="earth">Jorden</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="mars">Mars</string>
+    <string name="mercury">Merkurius</string>
+    <string name="neptune">Neptunus</string>
+    <string name="saturn">Saturnus</string>
+    <string name="uranus">Uranus</string>
+    <string name="venus">Venus</string>
+</resources>

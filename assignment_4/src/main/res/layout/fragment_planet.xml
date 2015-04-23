@@ -1,0 +1,81 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joelhenning.assignment_4.PlanetFragment"
+    android:id="@+id/planetInfoFragment"
+    android:background="#000000"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earth"
+            android:id="@+id/textViewPlanetName"
+            android:textSize="28dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewPlanet"
+            android:src="@drawable/earth"
+            android:layout_toRightOf="@id/textViewPlanetName"
+            android:layout_marginLeft="64dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/earth_radius"
+            android:id="@+id/textViewPlanetInfo1"
+            android:layout_below="@id/imageViewPlanet"
+            android:layout_alignStart="@id/textViewPlanetName"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/earth_temp"
+            android:id="@+id/textViewPlanetInfo2"
+            android:layout_below="@id/textViewPlanetInfo1"
+            android:layout_alignStart="@id/textViewPlanetName"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginTop="4dp"
+            />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_below="@id/textViewPlanetInfo2"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textViewPlanetText"
+                android:layout_marginTop="12dp"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:text="@string/earth_info"
+                />
+            </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
