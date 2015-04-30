@@ -7,6 +7,7 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 
 
 /**
@@ -22,7 +23,11 @@ public class InfoFragment extends DialogFragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_info, container, false);
+        View view = inflater.inflate(R.layout.fragment_info, container, false);
+
+        getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+
+        return view;
     }
 
 }
